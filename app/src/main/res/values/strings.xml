@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Builders Hub</string>
+    <string name="tagline">Construct your future plan</string>
+    <string name="footer_text">© Copyright Builders Hub 2022. All rights reserved</string>
+</resources>
