@@ -12,12 +12,14 @@
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="onboarding_screen.slideActivity"></activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name="onboarding_screen.slideActivity"/>
+        <activity android:name=".auth.forgotPasswordActivity"/>
+        <activity android:name=".auth.userProfileActivity"/>
+        <activity android:name=".auth.registerActivity" />
+        <activity android:name=".auth.loginActivity"/>
 
         <meta-data
             android:name="preloaded_fonts"

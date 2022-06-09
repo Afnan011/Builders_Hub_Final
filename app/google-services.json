@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "611425362549",
+    "firebase_url": "https://afnan-authentication-default-rtdb.firebaseio.com",
+    "project_id": "afnan-authentication",
+    "storage_bucket": "afnan-authentication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611425362549:android:efabe1c3f3044fc188ce3c",
+        "android_client_info": {
+          "package_name": "dev.afnan.authentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611425362549-jf4qqtp74vfv332m3t50a0ap22mo3fhk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmqJAKu7ITeETg-dhzRUdyojZitr-AZ_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611425362549-jf4qqtp74vfv332m3t50a0ap22mo3fhk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611425362549:android:5b80c027d0df5a8888ce3c",
+        "android_client_info": {
+          "package_name": "dev.afnan.builders_hub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611425362549-jf4qqtp74vfv332m3t50a0ap22mo3fhk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmqJAKu7ITeETg-dhzRUdyojZitr-AZ_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611425362549-jf4qqtp74vfv332m3t50a0ap22mo3fhk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -12,8 +12,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
-import dev.afnan.builders_hub.MainActivity;
 import dev.afnan.builders_hub.R;
+import dev.afnan.builders_hub.auth.loginActivity;
+import dev.afnan.builders_hub.auth.registerActivity;
 
 public class slideViewPagerAdapter extends PagerAdapter {
 
@@ -58,7 +59,7 @@ public class slideViewPagerAdapter extends PagerAdapter {
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ctx, MainActivity.class);
+                Intent intent = new Intent(ctx, registerActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 ctx.startActivity(intent);
             }
@@ -67,7 +68,7 @@ public class slideViewPagerAdapter extends PagerAdapter {
         logIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ctx, MainActivity.class);
+                Intent intent = new Intent(ctx, loginActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 ctx.startActivity(intent);
             }

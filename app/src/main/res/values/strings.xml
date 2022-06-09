@@ -2,4 +2,27 @@
     <string name="app_name">Builders Hub</string>
     <string name="tagline">Construct your future plan</string>
     <string name="footer_text">© Copyright Builders Hub 2022. All rights reserved</string>
+
+    <string name="login_here"> <u>Login Here</u> </string>
+    <string name="login">Login Here</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="enter_your_details_to_continue">Enter your details to continue</string>
+    <string name="let_s_get_to_know_you">Let\'s get to know you!</string>
+    <string name="by_clicking_on_create_account_button_you_agree_to_terms_of_use_and_privacy_policy">By Clicking On \'CREATE ACCOUNT\' Button,You agree to Terms of Use and Privacy Policy</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="create_account">Create Account</string>
+    <string name="phone">Phone</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="error">ERROR</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="please_login_with_your_credentials">Please login with your credentials</string>
+    <string name="create_an_account_here">Create an account here</string>
+    <string name="welcome_back">Welcome back !</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="don_t_have_an_account_yet">Don\'t have an account yet?</string>
+    <string name="log_in">LOG IN</string>
+
 </resources>
