@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bgColor">
@@ -13,7 +12,7 @@
         android:layout_marginTop="12dp"
         android:background="@drawable/button_layout2"
         android:fontFamily="@font/roboto"
-        android:text="Log In"
+        android:text="@string/log_in"
         android:textColor="@color/btnColor"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/btnCreateAcc"
@@ -32,7 +31,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.120000005"
-        app:srcCompat="@drawable/onboard1" />
+        app:srcCompat="@drawable/onboard1"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/title"
@@ -41,7 +41,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/roboto_medium"
-        android:text="Interation"
+        android:text="@string/interaction"
         android:textColor="@color/colorBlack"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/roboto"
-        android:text="between Workers and Users"
+        android:text="@string/between_workers_and_users"
         android:textColor="@color/colorBlack"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/title"
@@ -73,7 +73,7 @@
         android:layout_marginEnd="40dp"
         android:background="@drawable/button_layout"
         android:fontFamily="@font/roboto"
-        android:text="Create Account"
+        android:text="@string/create_account"
         android:textColor="@color/colorWhite"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -95,7 +95,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/desc"
         app:layout_constraintVertical_bias="0.19999999"
-        app:srcCompat="@drawable/selected" />
+        app:srcCompat="@drawable/selected"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/ind2"
@@ -108,7 +109,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/ind1"
         app:layout_constraintTop_toTopOf="@+id/ind1"
-        app:srcCompat="@drawable/selected" />
+        app:srcCompat="@drawable/selected"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/ind3"
@@ -119,7 +121,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/ind2"
         app:layout_constraintTop_toTopOf="@+id/ind2"
-        app:srcCompat="@drawable/selected" />
+        app:srcCompat="@drawable/selected"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/btnPrev"
@@ -129,7 +132,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_prev" />
+        app:srcCompat="@drawable/ic_prev"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/btnNext"
@@ -139,7 +143,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_next" />
+        app:srcCompat="@drawable/ic_next"
+        android:contentDescription="@string/todo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

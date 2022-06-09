@@ -23,6 +23,19 @@
     <string name="welcome_back">Welcome back !</string>
     <string name="forgot_password">Forgot password</string>
     <string name="don_t_have_an_account_yet">Don\'t have an account yet?</string>
-    <string name="log_in">LOG IN</string>
+    <string name="log_in">LOGIN</string>
+    <string name="logo">LOGO</string>
+    <string name="interaction">Interaction</string>
+    <string name="between_workers_and_users">between Workers and Users</string>
+    <string name="todo">TODO</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="submit">SUBMIT</string>
+    <string name="reset_your_password">Please enter your account’s email address and we will send you a link to reset your password.</string>
+    <string name="enter_email_address">Enter Email address</string>
+    <string name="user_profile">User Profile</string>
+    <string name="name">Name:</string>
+    <string name="phone_number">Phone Number:</string>
+    <string name="log_out">Log Out</string>
+
 
 </resources>
