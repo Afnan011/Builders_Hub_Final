@@ -63,7 +63,6 @@ public class slideActivity extends AppCompatActivity {
                 return true;
             }
         }
-
         return false;
 
     }

@@ -16,7 +16,7 @@ public class SplashActivity extends AppCompatActivity {
 
     ImageView logo;
     TextView tagline, footer;
-    Animation scale, top, fade;
+    Animation scale, fade;
 
     private static int SPLASH_SCREEN_TIME = 3000;
 
@@ -34,11 +34,11 @@ public class SplashActivity extends AppCompatActivity {
         footer = findViewById(R.id.footer);
 
         scale = AnimationUtils.loadAnimation(this, R.anim.scale);
-        top = AnimationUtils.loadAnimation(this, R.anim.top);
+//        top = AnimationUtils.loadAnimation(this, R.anim.top);
         fade = AnimationUtils.loadAnimation(this, R.anim.fade);
 
         logo.setAnimation(scale);
-        tagline.setAnimation(top);
+        tagline.setAnimation(fade);
         footer.setAnimation(fade);
 
         new Handler().postDelayed(new Runnable() {

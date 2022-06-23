@@ -145,6 +145,7 @@ public class registerActivity extends AppCompatActivity {
                                         Toast.makeText(registerActivity.this, "User has registered successfully", Toast.LENGTH_SHORT).show();
                                         Intent intent = new Intent(registerActivity.this, loginActivity.class);
                                         startActivity(intent);
+                                        finish();
                                     }
                                     else{
                                         Toast.makeText(registerActivity.this, "Failed to register! try again.", Toast.LENGTH_SHORT).show();
