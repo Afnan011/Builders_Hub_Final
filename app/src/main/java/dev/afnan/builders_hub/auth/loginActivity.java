@@ -2,6 +2,7 @@ package dev.afnan.builders_hub.auth;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
@@ -15,9 +16,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import dev.afnan.builders_hub.R;
 
@@ -27,7 +35,11 @@ public class loginActivity extends AppCompatActivity {
     private EditText editEmail, editPassword;
     private Button login;
     private ProgressBar progressBar;
+    private String userID = "";
     private FirebaseAuth mAuth;
+    private FirebaseDatabase database;
+    private DatabaseReference myRef;
+    private FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -119,10 +131,7 @@ public class loginActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
                             //redirect to user profile
-                            Intent intent = new Intent(loginActivity.this, userProfileActivity.class);
-                            startActivity(intent);
-                            progressBar.setVisibility(View.GONE);
-                            finish();
+                            checkUserAccessLevel(mAuth.getUid());
                         }
                         else{
                             progressBar.setVisibility(View.GONE);
@@ -133,6 +142,47 @@ public class loginActivity extends AppCompatActivity {
                 });
 
 
+    }
+
+    private void checkUserAccessLevel(String uid) {
+        database = FirebaseDatabase.getInstance();
+        myRef = database.getReference("Users");
+        user = mAuth.getCurrentUser();
+
+        myRef.child(uid).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                if(snapshot.child("isAdmin").exists()) {
+                    Intent intent = new Intent(loginActivity.this, userProfileActivity.class);
+                    startActivity(intent);
+                    Toast.makeText(loginActivity.this, "ADMIN", Toast.LENGTH_SHORT).show();
+                    progressBar.setVisibility(View.GONE);
+                    finish();
+                }
+
+                else if (snapshot.child("isWorker").exists()){
+                    Intent intent = new Intent(loginActivity.this, userProfileActivity.class);
+                    startActivity(intent);
+                    progressBar.setVisibility(View.GONE);
+                    Toast.makeText(loginActivity.this, "Worker", Toast.LENGTH_SHORT).show();
+                    finish();
+                }
+
+                else if (snapshot.child("isUser").exists()){
+                    Intent intent = new Intent(loginActivity.this, userProfileActivity.class);
+                    startActivity(intent);
+                    progressBar.setVisibility(View.GONE);
+                    Toast.makeText(loginActivity.this, "USER", Toast.LENGTH_SHORT).show();
+                    finish();
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Toast.makeText(loginActivity.this, "Something went wrong\n" + error.toString(), Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
     }

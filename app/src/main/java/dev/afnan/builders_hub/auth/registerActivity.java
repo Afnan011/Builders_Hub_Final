@@ -69,6 +69,7 @@ public class registerActivity extends AppCompatActivity {
         String phone = editPhone.getText().toString();
         String password1 = editPassword1.getText().toString().trim();
         String password2 = editPassword2.getText().toString().trim();
+        String isUser = "1";
 
         if (name.isEmpty()){
             editName.setError("Full name is required!");
@@ -134,7 +135,7 @@ public class registerActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
                         if (task.isSuccessful()){
-                            User user = new User(name, email, phone);
+                            User user = new User(name, email, phone, isUser);
                             FirebaseDatabase.getInstance().getReference("Users")
                                     .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                     .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -145,7 +146,6 @@ public class registerActivity extends AppCompatActivity {
                                         Toast.makeText(registerActivity.this, "User has registered successfully", Toast.LENGTH_SHORT).show();
                                         Intent intent = new Intent(registerActivity.this, loginActivity.class);
                                         startActivity(intent);
-                                        finish();
                                     }
                                     else{
                                         Toast.makeText(registerActivity.this, "Failed to register! try again.", Toast.LENGTH_SHORT).show();

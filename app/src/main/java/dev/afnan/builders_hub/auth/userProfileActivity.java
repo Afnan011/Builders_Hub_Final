@@ -65,7 +65,6 @@ public class userProfileActivity extends AppCompatActivity {
                         editPhone.setText(phone);
                         progressBar.setVisibility(View.GONE);
                     }
-
                 }
 
                 @Override
