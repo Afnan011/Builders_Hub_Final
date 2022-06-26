@@ -10,7 +10,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp">
 
         <ProgressBar
@@ -111,8 +111,10 @@
             android:layout_marginTop="2dp"
             android:fontFamily="@font/roboto"
             android:text="@string/forgot_password"
-            android:textColor="@color/colorAccent"
+            android:textColor="#FFB347"
             android:textSize="16sp"
+            android:textStyle="bold"
+            android:textIsSelectable="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
             app:layout_constraintHorizontal_bias="0.0"

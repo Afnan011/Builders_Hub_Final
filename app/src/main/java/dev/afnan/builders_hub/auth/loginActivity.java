@@ -35,7 +35,6 @@ public class loginActivity extends AppCompatActivity {
     private EditText editEmail, editPassword;
     private Button login;
     private ProgressBar progressBar;
-    private String userID = "";
     private FirebaseAuth mAuth;
     private FirebaseDatabase database;
     private DatabaseReference myRef;
