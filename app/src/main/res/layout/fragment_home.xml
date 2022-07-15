@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserModule.HomeFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/header_background"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_location"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/puttur"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.098" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:paddingTop="30dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="117dp"
+                    android:layout_height="63dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/time_icon"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.483"
+                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.083"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="116dp"
+                    android:layout_height="68dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/on_dem_icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.059"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/on_demand_services"
+                    android:textColor="#0F1051"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                    app:layout_constraintStart_toStartOf="@+id/imageView2"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/local_workers"
+                    android:textColor="#0F1051"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/_24_7_available"
+                    android:textColor="#0F1051"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView3"
+                    app:layout_constraintStart_toStartOf="@+id/imageView3"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="123dp"
+                    android:layout_height="70dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/loc_img"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                    app:layout_constraintHorizontal_bias="0.516"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="MissingConstraints" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/search_background"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="Looking for contractors?"
+                    android:textAlignment="center"
+                    android:textColor="#0F1051"
+                    android:textSize="20sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.473"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/btn_click_here"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btnborder"
+                    android:fontFamily="@font/roboto"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:text="Click Here"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/textView14"
+                    app:layout_constraintStart_toStartOf="@+id/textView14"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14"
+                    tools:ignore="MissingConstraints" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#ffffff">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_labour"
+                        android:layout_width="141dp"
+                        android:layout_height="121dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/image_layout"
+                        android:contentDescription="TODO"
+                        android:elevation="5dp"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/labour_icon"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_mistri"
+                        android:layout_width="141dp"
+                        android:layout_height="121dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/image_layout"
+                        android:contentDescription="@string/todo"
+                        android:elevation="5dp"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/mistri_icon"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_tiles"
+                        android:layout_width="141dp"
+                        android:layout_height="121dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/image_layout"
+                        android:elevation="5dp"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/marble_icon"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_painter"
+                        android:layout_width="141dp"
+                        android:layout_height="121dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/image_layout"
+                        android:contentDescription="TODO"
+                        android:elevation="5dp"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/painter_icon"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_furniture"
+                        android:layout_width="141dp"
+                        android:layout_height="121dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/image_layout"
+                        android:contentDescription="TODO"
+                        android:elevation="5dp"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/furniture_icon"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_plumber"
+                        android:layout_width="141dp"
+                        android:layout_height="121dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/image_layout"
+                        android:elevation="5dp"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/plumber_icon"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_plumber2"
+                        tools:ignore="SpeakableTextPresentCheck"
+                        android:layout_width="141dp"
+                        android:layout_height="121dp"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:background="@drawable/image_layout"
+                        android:layout_weight="1"
+                        android:elevation="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/welder_icon"
+                        android:contentDescription="TODO" />
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_plumber3"
+                        tools:ignore="SpeakableTextPresentCheck"
+                        android:layout_width="141dp"
+                        android:layout_height="121dp"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:elevation="5dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/image_layout"
+                        android:layout_weight="1"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/electrician_icon"
+                        android:contentDescription="@string/todo" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

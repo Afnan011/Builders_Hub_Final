@@ -1,4 +1,4 @@
-package dev.afnan.builders_hub;
+package dev.afnan.builders_hub.onboarding_screen;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,14 +8,15 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
-import onboarding_screen.*;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import dev.afnan.builders_hub.R;
 
 public class SplashActivity extends AppCompatActivity {
 
     ImageView logo;
-    TextView tagline, footer;
+    TextView tagLine, footer;
     Animation scale, fade;
 
     private static int SPLASH_SCREEN_TIME = 3000;
@@ -30,7 +31,7 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         logo = findViewById(R.id.logo);
-        tagline = findViewById(R.id.tagline);
+        tagLine = findViewById(R.id.tagline);
         footer = findViewById(R.id.footer);
 
         scale = AnimationUtils.loadAnimation(this, R.anim.scale);
@@ -38,7 +39,7 @@ public class SplashActivity extends AppCompatActivity {
         fade = AnimationUtils.loadAnimation(this, R.anim.fade);
 
         logo.setAnimation(scale);
-        tagline.setAnimation(fade);
+        tagLine.setAnimation(fade);
         footer.setAnimation(fade);
 
         new Handler().postDelayed(new Runnable() {

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="#F1F1F1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="25dp"
+            android:fontFamily="@font/roboto_bold"
+            android:shadowColor="@color/colorPrimary"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="@string/confirm_order"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#ffb347"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Worker Type:"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:textColor="#CD000000"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/wtype"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:textColor="#CD000000" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtnWorkers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:fontFamily="@font/roboto"
+            android:hint="Workers Required in Total"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtNDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:hint="Anticipated Work Duration"
+                android:padding="10dp"
+                android:inputType="number"
+                android:background="@null"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtdays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="days"
+                android:padding="10dp"
+                android:textColor="#CD000000" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtLocation"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/border"
+            android:fontFamily="@font/roboto"
+            android:hint="Location/Address"
+            android:drawableStart="@drawable/location_icon"
+            android:drawablePadding="10dp"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textColor="#000000" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="#000000" />
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="5"
+                    android:text="Payment Summary"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/summary_note"
+                    android:padding="5dp"
+                    android:textColor="#E9000000"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_margin="20dp">
+
+            <Button
+                android:id="@+id/BtnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/btnborder"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/book_now"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

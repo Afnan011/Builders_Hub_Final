@@ -38,4 +38,30 @@
     <string name="log_out">Log Out</string>
 
 
+    <string name="rate_dialog_message">If you enjoy using this app, would you mind taking a moment to rate it? It won\'t take more than a minute. Thanks for your support!</string>
+
+
+    <string name="local_workers">Local Workers</string>
+    <string name="on_demand_services">On-Demand Services</string>
+    <string name="_24_7_available">24/7 Available</string>
+    <string name="puttur">Puttur</string>
+
+
+    <string name="book_now">Book Now</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="my_bookings">My Bookings</string>
+    <string name="summary_note">Summary Note : Once the Booking is Accepted , Please Discuss and Finalize the Work Requirements and Charges / Amount Directly with the Service Provider .</string>
+
+
+    <array name="worker_type">
+        <item>Labour</item>
+        <item>Mistri</item>
+        <item>Tiles/Marble Mistri</item>
+        <item>Painter</item>
+        <item>Furniture Works</item>
+        <item>Plumber</item>
+        <item>Welder</item>
+        <item>Electrician</item>
+    </array>
+
 </resources>

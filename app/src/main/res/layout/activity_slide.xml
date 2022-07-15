@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bgColor"
-    tools:context="onboarding_screen.slideActivity">
+    android:background="@color/colorBG"
+    tools:context="dev.afnan.builders_hub.onboarding_screen.slideActivity">
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"

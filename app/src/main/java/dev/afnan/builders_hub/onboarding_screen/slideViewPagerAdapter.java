@@ -1,4 +1,4 @@
-package onboarding_screen;
+package dev.afnan.builders_hub.onboarding_screen;
 
 import android.content.Context;
 import android.content.Intent;

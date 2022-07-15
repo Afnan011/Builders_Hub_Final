@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bgColor">
+    android:background="@color/colorBG">
 
     <Button
         android:id="@+id/btnLogin"
@@ -13,7 +13,7 @@
         android:background="@drawable/button_layout2"
         android:fontFamily="@font/roboto"
         android:text="@string/log_in"
-        android:textColor="@color/btnColor"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/btnCreateAcc"
         app:layout_constraintHorizontal_bias="0.0"

@@ -20,6 +20,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
+import dev.afnan.builders_hub.Models.User;
 import dev.afnan.builders_hub.R;
 
 public class registerActivity extends AppCompatActivity {

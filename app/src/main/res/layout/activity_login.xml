@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorBG"
     android:id="@+id/scrollView2"
     tools:context=".auth.loginActivity">
 
@@ -98,7 +98,6 @@
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:fontFamily="@font/roboto"
             android:text="@string/don_t_have_an_account_yet"
             android:textColor="#000000"
@@ -142,7 +141,7 @@
             app:layout_constraintHorizontal_bias="0.427"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4"
-            app:layout_constraintVertical_bias="0.24000001">
+            app:layout_constraintVertical_bias="0.25">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/email"

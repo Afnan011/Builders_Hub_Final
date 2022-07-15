@@ -1,9 +1,8 @@
-package onboarding_screen;
+package dev.afnan.builders_hub.onboarding_screen;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
@@ -14,8 +13,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 import dev.afnan.builders_hub.R;
-import dev.afnan.builders_hub.auth.loginActivity;
-import dev.afnan.builders_hub.auth.userProfileActivity;
+import dev.afnan.builders_hub.UserModule.UserActivity;
 
 
 public class slideActivity extends AppCompatActivity {
@@ -42,7 +40,7 @@ public class slideActivity extends AppCompatActivity {
         viewPager.startAnimation(anim);
 
         if (isOpenAlready()){
-            Intent intent = new Intent(slideActivity.this, userProfileActivity.class);
+            Intent intent = new Intent(slideActivity.this, UserActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         }

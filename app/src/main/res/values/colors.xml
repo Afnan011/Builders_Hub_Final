@@ -9,8 +9,11 @@
     <color name="btnColor">#FFB347</color>
 
     <!--  Background color  -->
-    <color name="bgColor">#F1F1F1</color>
+    <color name="colorBG">#F1F1F1</color>
     <color name="colorBackground">#FFF599</color>
+
+    <color name="text_color">#0F1051</color>
+    <color name="colorBGDark">#FFF599</color>
 
     <!--  Font colors  -->
     <color name="colorBlack">#000000</color>

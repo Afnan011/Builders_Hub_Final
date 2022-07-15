@@ -3,23 +3,34 @@
     package="dev.afnan.builders_hub">
 
     <application
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
         android:allowBackup="true"
         android:icon="@drawable/ic_rounded"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashActivity">
+        <activity android:name=".onboarding_screen.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="onboarding_screen.slideActivity"/>
+        <activity android:name=".onboarding_screen.slideActivity"/>
         <activity android:name=".auth.forgotPasswordActivity"/>
-        <activity android:name=".auth.userProfileActivity"/>
         <activity android:name=".auth.registerActivity" />
         <activity android:name=".auth.loginActivity"/>
+
+        <activity android:name=".UserModule.ConfirmOrder" />
+        <activity android:name=".UserModule.UserActivity"/>
+        <receiver android:name=".utility.NetworkChangeListener">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+
 
         <meta-data
             android:name="preloaded_fonts"
