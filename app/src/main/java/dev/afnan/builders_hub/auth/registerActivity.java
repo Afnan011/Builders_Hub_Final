@@ -85,7 +85,7 @@ public class registerActivity extends AppCompatActivity {
         }
 
         if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-            editEmail.setError("Please enter a valid Email");
+            editEmail.setError("Please enter a valid Email!");
             editEmail.requestFocus();
             return;
         }
