@@ -39,6 +39,7 @@ public class ConfirmOrder extends AppCompatActivity {
     FirebaseDatabase database;
     DatabaseReference orderReference;
     DatabaseReference requestReference;
+    FirebaseAuth mAuth;
     public int counter = 1;
 
     @Override
@@ -51,7 +52,7 @@ public class ConfirmOrder extends AppCompatActivity {
         editLocation = findViewById(R.id.edtLocation);
         placeOrderButton = findViewById(R.id.BtnSave);
         spinner = findViewById(R.id.wtype);
-
+        mAuth = FirebaseAuth.getInstance();
 
         database = FirebaseDatabase.getInstance();
         requestReference = database.getReference().child("Orders");
@@ -153,7 +154,8 @@ public class ConfirmOrder extends AppCompatActivity {
         User request = new User(
                 Common.CurrentUser.getName(),
                 Common.CurrentUser.getEmail(),
-                Common.CurrentUser.getPhone()
+                Common.CurrentUser.getPhone(),
+                mAuth.getUid()
         );
 
 
