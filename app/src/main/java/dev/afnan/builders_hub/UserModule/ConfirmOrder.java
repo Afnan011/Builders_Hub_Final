@@ -28,6 +28,7 @@ import java.util.Locale;
 import dev.afnan.builders_hub.Common.Common;
 import dev.afnan.builders_hub.Models.Order;
 import dev.afnan.builders_hub.Models.User;
+import dev.afnan.builders_hub.Models.UserProfile;
 import dev.afnan.builders_hub.R;
 
 public class ConfirmOrder extends AppCompatActivity {
@@ -151,7 +152,7 @@ public class ConfirmOrder extends AppCompatActivity {
         }
 
 
-        User request = new User(
+        UserProfile request = new UserProfile(
                 Common.CurrentUser.getName(),
                 Common.CurrentUser.getEmail(),
                 Common.CurrentUser.getPhone(),
