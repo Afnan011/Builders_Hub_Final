@@ -12,6 +12,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import dev.afnan.builders_hub.AccessLevelDecider;
 import dev.afnan.builders_hub.R;
 import dev.afnan.builders_hub.UserModule.UserActivity;
 
@@ -40,7 +41,7 @@ public class slideActivity extends AppCompatActivity {
         viewPager.startAnimation(anim);
 
         if (isOpenAlready()){
-            Intent intent = new Intent(slideActivity.this, UserActivity.class);
+            Intent intent = new Intent(slideActivity.this, AccessLevelDecider.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         }

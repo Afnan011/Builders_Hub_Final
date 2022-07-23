@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+import dev.afnan.builders_hub.Common.Common;
 import dev.afnan.builders_hub.Models.Order;
 import dev.afnan.builders_hub.R;
 
@@ -46,30 +47,12 @@ public class recyclerAdapter extends RecyclerView.Adapter<recyclerAdapter.OrderV
         holder.txtLocation.setText(order.getAddress());
 
         String status_code = order.getStatus();
-        String status = checkStatus(status_code);
+        String status = Common.checkStatus(status_code);
         holder.txtStatus.setText(status);
 
     }
 
 
-    private String checkStatus(String status_code) {
-
-        String st = "N/A";
-
-        if (status_code.equals("0")) {
-            st = "Order Placed";
-        } else if (status_code.equals("1")) {
-            st = "Pending";
-        } else if (status_code.equals("2")) {
-            st = "Accepted";
-        } else if (status_code.equals("3")) {
-            st = "cancelled";
-        }
-
-        Log.d("statusCheck", "conditions not met , status is: " + st);
-        return st;
-
-    }
 
     @Override
     public int getItemCount() {

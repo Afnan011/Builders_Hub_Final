@@ -122,27 +122,27 @@ public class UserActivity extends AppCompatActivity {
     }
 
 
-    @Override
-    protected void onStart() {
-        try {
-            IntentFilter filter = new IntentFilter();
-            registerReceiver(broadcastReceiver, filter);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        super.onStart();
-    }
-
-
-    @Override
-    protected void onStop() {
-        try {
-            unregisterReceiver(broadcastReceiver);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        super.onStop();
-    }
+//    @Override
+//    protected void onStart() {
+//        try {
+//            IntentFilter filter = new IntentFilter();
+//            registerReceiver(broadcastReceiver, filter);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        super.onStart();
+//    }
+//
+//
+//    @Override
+//    protected void onStop() {
+//        try {
+//            unregisterReceiver(broadcastReceiver);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        super.onStop();
+//    }
 
 
 }
