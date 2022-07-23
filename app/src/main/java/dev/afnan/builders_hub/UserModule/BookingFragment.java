@@ -66,7 +66,7 @@ public class BookingFragment extends Fragment {
 
         if (userID != null) {
 
-            order.child(userID).child("orderRequests").addValueEventListener(new ValueEventListener() {
+            order.child(userID).child("orderRequests").addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
 
@@ -78,7 +78,6 @@ public class BookingFragment extends Fragment {
                     sortOrders();
                     myAdapter.notifyDataSetChanged();
                     Log.d("orderData", "data received successfully");
-
                 }
 
                 @Override
@@ -86,8 +85,8 @@ public class BookingFragment extends Fragment {
                     Log.d("orderData", "data failed");
                 }
             });
-
-        } else {
+        }
+        else {
             Log.d("userId", "user ID is null");
         }
 
