@@ -69,7 +69,7 @@ public class ConfirmOrder extends AppCompatActivity {
                 new ArrayAdapter<String>(this, R.layout.worker_type_spinner_layout, workerType);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        // attaching data adapter to spinner
+        // Attaching data adapter to spinner.
         spinner.setAdapter(dataAdapter);
         spinner.setSelection(selectedItem);
 
